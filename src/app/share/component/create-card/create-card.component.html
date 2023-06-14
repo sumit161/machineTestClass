@@ -45,7 +45,7 @@
           *ngIf="f['userName'].invalid && getUserNameControl.touched"
         >
           <p class="danger" *ngIf="getUserNameControl.hasError('required')">
-            Username is Mandetory
+            Username is mandatory
           </p>
           <p class="danger" *ngIf="getUserNameControl.hasError('noSpaceerror')">
             {{getUserNameControl.errors?.['noSpaceerror']}}
@@ -93,7 +93,7 @@
 
         <ng-container *ngIf="f['lastname'].invalid && f['lastname'].touched">
           <p class="danger" *ngIf="f['lastname'].hasError('required')">
-            lastname is Mandetory
+            lastname is mandatory
           </p>
         </ng-container>
 
@@ -182,7 +182,7 @@
 
         <ng-container *ngIf="f['date'].invalid && f['date'].touched">
           <p class="danger">
-            This field is mandetory
+            This field is mandatory
           </p>
         </ng-container>
         <ng-container *ngIf="f['date'].valid && f['date'].touched">
@@ -220,7 +220,7 @@
 
 
 
-        <ng-container *ngIf="f['Email'].invalid && f['Email'].dirty">
+        <ng-container *ngIf="f['Email'].invalid && f['Email'].touched">
           <p class="danger" *ngIf="f['Email'].hasError('required')">
             Email is required field
           </p>
@@ -270,7 +270,7 @@
           *ngIf="f['phoneNumber'].invalid && f['phoneNumber'].touched"
         >
 
-          <p class="danger">  Phone number is mandetory</p>
+          <p class="danger">  Phone number is mandatory</p>
         </ng-container>
 
         <ng-container
@@ -334,7 +334,7 @@
 
         <ng-container *ngIf="f['password'].invalid && f['password'].touched">
           <p class="danger" *ngIf="f['password'].hasError('required')">
-            Password is mandetory
+            Password is mandatory
           </p>
           <p class="danger" *ngIf="f['password'].hasError('pattern')">
             Password should contain at least one capital letter,one
